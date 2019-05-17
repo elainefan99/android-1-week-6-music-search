@@ -2,6 +2,8 @@ package com.ucsdextandroid1.musicsearch.data;
 
 import java.util.List;
 
+import retrofit2.http.GET;
+
 /**
  * Created by rjaylward on 2019-05-10
  */
@@ -33,5 +35,6 @@ public class DataSources {
 
     public interface ItunesApi {
         //TODO add a method that corresponds to the search method on the iTunesApi
+
     }
 }
