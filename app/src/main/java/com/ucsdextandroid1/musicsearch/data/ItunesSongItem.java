@@ -11,7 +11,7 @@ public class ItunesSongItem implements SongItem {
     @SerializedName("artistName")
     private String artistName;
     @SerializedName("trackId")
-    private String trackId;
+    private long trackId;
     @SerializedName("trackName")
     private String trackName;
     @SerializedName("collectionName")
@@ -21,7 +21,7 @@ public class ItunesSongItem implements SongItem {
     @SerializedName("previewUrl")
     private String previewUrl;
     @SerializedName("trackTimeMillis")
-    private String trackTimeMillis;
+    private int trackTimeMillis;
 
 
 
@@ -30,7 +30,7 @@ public class ItunesSongItem implements SongItem {
 
     @Override
     public long getTrackId() {
-        return 0;
+        return trackId;
     }
 
     @Override
@@ -60,7 +60,7 @@ public class ItunesSongItem implements SongItem {
 
     @Override
     public long getTrackTime() {
-        return 0;
+        return trackTimeMillis;
     }
 
 
